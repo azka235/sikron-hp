@@ -1,0 +1,322 @@
+[
+    {
+        "question" : "Hasil dari 12 + 8 adalah:",
+        "a": "18",
+        "b": "20",
+        "c": "22",
+        "d": "24",
+        "answer": "b"
+    },
+    {
+        "question" : "Jika kamu memiliki 15 apel, lalu makan 5 apel, berapa apel yang tersisa?",
+        "a": "5",
+        "b": "10",
+        "c": "12",
+        "d": "15",
+        "answer": "b"
+    },
+    {
+        "question" : "Ibu membeli 4 kantong beras. Jika setiap kantong berisi 5 kg, berapa total kilogram beras yang dibeli Ibu?",
+        "a": "15 kg",
+        "b": "20 kg",
+        "c": "25 kg",
+        "d": "30 kg",
+        "answer": "b"
+    },
+    {
+        "question" : "Hasil dari 36 ÷ 6 adalah:",
+        "a": "5",
+        "b": "6",
+        "c": "7",
+        "d": "8",
+        "answer": "b"
+    },
+    {
+        "question" : "Ali memiliki 3 kotak. Setiap kotak berisi 4 kue. Berapa total kue yang dimiliki Ali?",
+        "a": "7",
+        "b": "9",
+        "c": "12",
+        "d": "15",
+        "answer": "c"
+    },
+    {
+        "question" : "Sebuah keranjang berisi 24 jeruk. Jika jeruk tersebut dibagi ke dalam 8 kantong sama banyak, berapa jeruk di setiap kantong?",
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "6",
+        "answer": "c"
+    },
+    {
+        "question" : "Hasil dari 50 - 15 adalah:",
+        "a": "25",
+        "b": "30",
+        "c": "35",
+        "d": "40",
+        "answer": "c"
+    },
+    {
+        "question" : "Ayah membeli 6 bungkus permen. Jika setiap bungkus berisi 7 permen, berapa total permen yang dibeli ayah?",
+        "a": "36",
+        "b": "42",
+        "c": "48",
+        "d": "56",
+        "answer": "b"
+    },
+    {
+        "question" : "Hasil dari 100 ÷ 10 adalah:",
+        "a": "5",
+        "b": "10",
+        "c": "20",
+        "d": "30",
+        "answer": "b"
+    },
+    {
+        "question" : "Jika kamu memiliki 20 bola dan memberikan 8 bola ke temanmu, berapa bola yang kamu miliki sekarang?",
+        "a": "10",
+        "b": "12",
+        "c": "14",
+        "d": "16",
+        "answer": "b"
+    },
+    {
+        "question" : "Hasil dari 7 × 6 adalah:",
+        "a": "36",
+        "b": "40",
+        "c": "42",
+        "d": "48",
+        "answer": "c"
+    },
+    {
+        "question" : "Ibu mempunyai 5 toples. Setiap toples berisi 8 kelereng. Berapa jumlah kelereng seluruhnya?",
+        "a": "30",
+        "b": "35",
+        "c": "40",
+        "d": "45",
+        "answer": "c"
+    },
+    {
+        "question" : "Jika 18 buah mangga dibagi ke 3 keranjang sama banyak, berapa mangga di setiap keranjang?",
+        "a": "4",
+        "b": "5",
+        "c": "6",
+        "d": "7",
+        "answer": "c"
+    },
+    {
+        "question" : "Hasil dari 25 + 17 adalah:",
+        "a": "40",
+        "b": "42",
+        "c": "45",
+        "d": "50",
+        "answer": "b"
+    },
+    {
+        "question" : "Ani memiliki 30 permen. Jika ia membagikan 6 permen ke setiap temannya, berapa teman yang mendapat permen?",
+        "a": "4",
+        "b": "5",
+        "c": "6",
+        "d": "7",
+        "answer": "b"
+    },
+    {
+        "question" : "Hasil dari 9 × 4 adalah:",
+        "a": "32",
+        "b": "36",
+        "c": "40",
+        "d": "45",
+        "answer": "b"
+    },
+    {
+        "question" : "Dika mempunyai 8 buku. Lalu ia membeli 5 buku lagi. Berapa jumlah buku Dika sekarang?",
+        "a": "10",
+        "b": "11",
+        "c": "12",
+        "d": "13",
+        "answer": "d"
+    },
+    {
+        "question" : "Hasil dari 40 - 25 adalah:",
+        "a": "10",
+        "b": "12",
+        "c": "15",
+        "d": "18",
+        "answer": "c"
+    },
+    {
+        "question" : "Toni memiliki 3 ikat bunga. Jika setiap ikat berisi 9 bunga, berapa total bunga yang dimiliki Toni?",
+        "a": "18",
+        "b": "21",
+        "c": "24",
+        "d": "27",
+        "answer": "d"
+    },
+    {
+        "question" : "Hasil dari 28 ÷ 4 adalah:",
+        "a": "6",
+        "b": "7",
+        "c": "8",
+        "d": "9",
+        "answer": "b"
+    },
+        {
+            "question": "Hasil dari 14 × 2 adalah:",
+            "a": "26",
+            "b": "28",
+            "c": "30",
+            "d": "32",
+            "answer": "b"
+        },
+        {
+            "question": "Jika ada 9 apel di keranjang dan 5 di antaranya diambil, berapa apel yang tersisa?",
+            "a": "2",
+            "b": "3",
+            "c": "4",
+            "d": "5",
+            "answer": "c"
+        },
+        {
+            "question": "Hasil dari 60 ÷ 5 adalah:",
+            "a": "10",
+            "b": "12",
+            "c": "14",
+            "d": "16",
+            "answer": "b"
+        },
+        {
+            "question": "Ani memiliki 20 permen dan memberikan 4 permen kepada setiap teman. Berapa teman yang mendapat permen?",
+            "a": "4",
+            "b": "5",
+            "c": "6",
+            "d": "7",
+            "answer": "b"
+        },
+        {
+            "question": "Jika sebuah buku memiliki 200 halaman dan Ani membaca 50 halaman setiap hari, berapa hari yang dibutuhkan Ani untuk menyelesaikan buku tersebut?",
+            "a": "2",
+            "b": "3",
+            "c": "4",
+            "d": "5",
+            "answer": "c"
+        },
+        {
+            "question": "Hasil dari 45 - 18 adalah:",
+            "a": "25",
+            "b": "27",
+            "c": "28",
+            "d": "30",
+            "answer": "b"
+        },
+        {
+            "question": "Hasil dari 8 × 5 adalah:",
+            "a": "30",
+            "b": "35",
+            "c": "40",
+            "d": "45",
+            "answer": "c"
+        },
+        {
+            "question": "Dika memiliki 3 bungkus coklat. Jika setiap bungkus berisi 9 coklat, berapa jumlah coklat seluruhnya?",
+            "a": "24",
+            "b": "27",
+            "c": "30",
+            "d": "36",
+            "answer": "b"
+        },
+        {
+            "question": "Hasil dari 81 ÷ 9 adalah:",
+            "a": "7",
+            "b": "8",
+            "c": "9",
+            "d": "10",
+            "answer": "c"
+        },
+        {
+            "question": "Jika kamu memiliki 5 kotak dan setiap kotak berisi 6 buah pensil, berapa jumlah pensil seluruhnya?",
+            "a": "25",
+            "b": "30",
+            "c": "35",
+            "d": "40",
+            "answer": "b"
+        },
+        {
+            "question": "Hasil dari 56 ÷ 8 adalah:",
+            "a": "5",
+            "b": "6",
+            "c": "7",
+            "d": "8",
+            "answer": "c"
+        },
+        {
+            "question": "Ani memiliki 16 apel dan membagikannya ke 4 keranjang sama banyak. Berapa apel di setiap keranjang?",
+            "a": "3",
+            "b": "4",
+            "c": "5",
+            "d": "6",
+            "answer": "b"
+        },
+        {
+            "question": "Hasil dari 11 × 3 adalah:",
+            "a": "30",
+            "b": "33",
+            "c": "36",
+            "d": "39",
+            "answer": "b"
+        },
+        {
+            "question": "Jika ada 40 kelereng dan 8 kelereng diberikan ke setiap anak, berapa anak yang menerima kelereng?",
+            "a": "3",
+            "b": "4",
+            "c": "5",
+            "d": "6",
+            "answer": "c"
+        },
+        {
+            "question": "Hasil dari 72 ÷ 8 adalah:",
+            "a": "8",
+            "b": "9",
+            "c": "10",
+            "d": "11",
+            "answer": "b"
+        },
+        {
+            "question": "Hasil dari 18 × 2 adalah:",
+            "a": "32",
+            "b": "34",
+            "c": "36",
+            "d": "38",
+            "answer": "c"
+        },
+        {
+            "question": "Jika ada 50 lembar kertas dan dibagi ke 5 siswa sama banyak, berapa lembar yang diterima setiap siswa?",
+            "a": "8",
+            "b": "10",
+            "c": "12",
+            "d": "15",
+            "answer": "b"
+        },
+        {
+            "question": "Hasil dari 6 × 7 adalah:",
+            "a": "36",
+            "b": "40",
+            "c": "42",
+            "d": "48",
+            "answer": "c"
+        },
+        {
+            "question": "Sebuah keranjang berisi 35 buah. Jika 7 buah diambil setiap hari, berapa hari yang dibutuhkan untuk mengosongkan keranjang?",
+            "a": "3",
+            "b": "4",
+            "c": "5",
+            "d": "6",
+            "answer": "c"
+        },
+        {
+            "question": "Hasil dari 90 ÷ 10 adalah:",
+            "a": "8",
+            "b": "9",
+            "c": "10",
+            "d": "11",
+            "answer": "b"
+        }
+]

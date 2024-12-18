@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/css/style.css">
+    <title>Permainan Ular Tangga</title>
+    <link rel='icon' href='./assets/favicon.png' type='image/x-icon'>
+</head>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">Kolom 1</div>
+      <div class="col-md-6">Kolom 2</div>
+    </div>
+  </div>
+  
+<body id="container">
+    <div class="question">
+        <div class="small-box" id="question-small-box">
+            <div class="message">
+                <h1 id="question-for">Pertanyaan Untuk Pemain</h1>
+            </div>
+            <div id="question-wrapper">
+                <p id="question-part">Hasil dari 28 ÷ 4 adalah:</p>
+                <label><input type="radio" name="mcq" value="a" >9</label>
+                <label><input type="radio" name="mcq" value="b" >8</label>
+                <label><input type="radio" name="mcq" value="c" >7</label>
+                <label><input type="radio" name="mcq" value="d" >6</label>
+                <div class="answer-wrapper">
+                    <button id="answer-btn" onclick="getAnswer()">Simpan</button>
+                </div>
+                <div class="remark-box">
+                    <label id="remark" style="display: none;">Jawaban Benar, Anda Bisa Melempar Dadu</label>
+                    <button id="proceed-btn" style="display: none;" onclick="proceed()">Lanjut</button>
+                    <button id="next-btn" style="display: none;" onclick="nextPlayer()">Berikutnya</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="first-box" >
+        <div class="small-box" style="display: none;" id="winner-announce">
+            <div class="close-btn">
+                <button onclick="closeWinner()"><img src="./assets/close.png"></button>
+            </div>
+            <div class="message" id="announce-box">
+                <h1 id="winner-name">Pemenangnya Adalah </h1>
+            </div>
+            <div class="btn-res">
+                <button id="restart" onclick="location.reload();">Mulai Ulang Permainan</button>
+            </div>
+        </div>
+        <div class="small-box" id="welcome">
+            <div class="close-btn">
+                <button onclick="closeWelcome()"><img src="./assets/close.png"></button>
+            </div>
+            <div class="message">
+                <h1>Selamat datang di Permainan Ular Tangga!</h1>
+                <div class="group-box">
+                    <p id="forgithub">Ini adalah permainan seru yang bisa dimainkan oleh teman-teman semua! Dalam permainan ini, kamu akan menjawab beberapa pertanyaan. Jika jawabannya benar, kamu bisa melempar dadu dan melangkah di papan permainan. Hati-hati, karena ada ular yang bisa membuat langkahmu mundur, dan ada tangga yang bisa membantumu berjalan lebih cepat! Tujuan utama permainan ini adalah mencapai kotak ke-100 terlebih dahulu. Jadi, ayo jawab pertanyaan dengan benar dan jadilah pemenang!</p>
+                </div>
+            </div>
+        </div>
+        <div class="small-box" style="display: none;" id="instruction">
+            <div class="close-btn">
+                <button onclick="closeInstruction()"><img src="./assets/close.png"></button>
+            </div>
+            <div class="message">
+                <h1>Aturan Main Ular Tangga</h1>
+                <div class="instructions">
+                    <p>1. Masukkan nama pemain, lalu mulai permainan.</p>
+                    <p>2. Maksimal 6 pemain yang boleh ikut bermain.</p>
+                    <p>3. Setelah permainan dimulai, setiap pemain harus menjawab pertanyaan pilihan ganda.</p>
+                    <p>4. jika jawabannya benar, pemain boleh melempar dadu.</p>
+                    <p>5. jika jawabannya salah, pemain harus melewatkan giliran.</p>
+                    <p>6. Pemain yang pertama mencapai kotak nomor 100 adalah pemenangnya.</p>
+                </div>
+            </div>
+        </div>
+        <div class="small-box" style="display: none;" id="addplayer">
+            <div class="message">
+                <h1 style="margin-top: 8vh;">Masukan Pemain</h1>
+                <div class="added-player">
+                    <label id="added-players"></label>
+                </div>
+                <div id="adding">
+                    <input type="text" id="player-name">
+                    <input style="margin-top: 2vh;" id="player-submit" type="submit" value="Tambah" onclick="playertrigger()">
+                    <p id="warning" style="display: none;">Nama Pemain Tidak Boleh Kosong</p>
+                    <p id="left-player">6 Pemain lagi</p>
+                </div>
+                <div id="start-game">
+                    <button id="start-btn" disabled onclick="launchgame()">Mulai</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div id="board">
+            <img src="./assets/snake-ladder.png">
+            <table id="table-board">
+
+            </table>
+        </div>
+        <div class="right-block">
+            <div class="player">
+                <div class="current">
+                    <label>Pemain Saat Ini</label>
+                    <div class="position">
+                        <p id="current-player"></p>
+                        <p id="current-posi"></p>
+                    </div>
+                </div>
+                <div class="total">
+                    <label>Jumlah Pemain</label>
+                    <div id="total-player-display">
+                    </div>
+                </div>
+            </div>
+            <div class="roll-dice">
+                <div class="dice-box">
+                    <img id="dice" src="./assets/dice-1.png">
+                </div>
+                <div class="control">
+                    <button id="btn-roll" onclick="dicerollvalue()" disabled>Lempar Dadu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function playertrigger() {
+            var pname = document.getElementById('player-name')
+
+            pname = pname.value.trim()
+            var warning = document.getElementById('warning')
+
+            if (pname == "") {
+                warning.style.color = 'red'
+                warning.style.display = 'block'
+                document.getElementById('player-name').value = ""
+            } else {
+                warning.style.display = 'none'
+                addPlayer(pname)
+            }
+        }
+
+        function closeWelcome() {
+
+            document.getElementById('welcome').style.display = "none";
+            document.getElementById('instruction').style.display = "block";
+        }
+
+        function closeInstruction() {
+
+            document.getElementById('instruction').style.display = "none";
+            document.getElementById('addplayer').style.display = "block";
+        }
+
+        function closeAddPlayer() {
+
+            document.getElementById('addplayer').style.display = "none";
+            document.getElementById('first-box').style.display = "none";
+
+        }
+
+        function closeWinner() {
+            document.getElementById('winner-announce').style.display = "none";
+            document.getElementById('first-box').style.display = "none";
+        }
+    </script>
+    <script src="./js/index.js"></script>
+    <script src="./question.json"></script>
+</body>
+
+</html>
